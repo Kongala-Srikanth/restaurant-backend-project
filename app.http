@@ -1,0 +1,56 @@
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    'name' : 'srikanth',
+    'email': 'srikanth4@gmail.com'
+    'password': 'srikanth44'
+}
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    'email': 'srikanth4@gmail.com'
+    'password': 'srikanth44'
+}
+
+GET http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzA1NDkyN2UwYzRhMzUzNGUyZTVkNTgiLCJpYXQiOjE3Mjg0MDA2NTB9.no-ztAQjShnIifUe5lu64YKIUdufUx2UoBmCvq63Ma0
+
+PUT http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzA1NDkyN2UwYzRhMzUzNGUyZTVkNTgiLCJpYXQiOjE3Mjg0MDA2NTB9.no-ztAQjShnIifUe5lu64YKIUdufUx2UoBmCvq63Ma0
+Content-Type: application/json
+
+{
+    "name": "srikanth",
+    "email": "srikanth123@gmail.com",
+    "phone": "7075960802",
+     "addresses": [
+        {
+            "street": "beeramguda",
+            "city": "Hyderabad",
+            "postalCode": "502032"
+        },
+        {
+            "street": "rc puram",
+            "city": "Hyderabad",
+            "postalCode": "502032"
+        }
+    ]
+}
+
+
+POST http://localhost:3000/restaurants
+Content-Type: application/json
+
+{
+    "name": "Sweat Fired",
+    "location": "KPHB",
+    "password": "sweatfired@44"
+}
+
+
+GET http://localhost:3000/restaurants
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzA1NDkyN2UwYzRhMzUzNGUyZTVkNTgiLCJpYXQiOjE3Mjg0MDA2NTB9.no-ztAQjShnIifUe5lu64YKIUdufUx2UoBmCvq63Ma0
